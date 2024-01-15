@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    <!-- head.html 파일을 현재 위치에 포함시킨다. -->
+    {%- include head.html -%}
+
+    <body>
+        <main class="page-content">
+            <div class="wrapper">{{ content }}</div>
+        </main>
+    </body>
+</html>
