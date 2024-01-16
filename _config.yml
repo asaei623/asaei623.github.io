@@ -1,5 +1,5 @@
-theme: "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+# theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -106,24 +106,9 @@ author:
 # Site Footer
 footer:
     links:
-        - label: "Twitter"
-          icon: "fab fa-fw fa-twitter-square"
-          # url:
-        - label: "Facebook"
-          icon: "fab fa-fw fa-facebook-square"
-          # url:
         - label: "GitHub"
           icon: "fab fa-fw fa-github"
-          # url:
-        - label: "GitLab"
-          icon: "fab fa-fw fa-gitlab"
-          # url:
-        - label: "Bitbucket"
-          icon: "fab fa-fw fa-bitbucket"
-          # url:
-        - label: "Instagram"
-          icon: "fab fa-fw fa-instagram"
-          # url:
+          url: "https://github.com/asaei623"
 
 # Reading Files
 include:
