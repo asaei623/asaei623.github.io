@@ -6,21 +6,23 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 15 !default;
+$doc-font-size: 16 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
-$indent-var: 1.3em !default;
+$indent-var: 0.7lem !default;
 
 /* system typefaces */
-$serif: Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
-    "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$serif: "Pretendard", Georgia, Times, serif !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Pretendard", "Montserrat",
+    "Merriweather", sans-serif !default;
+$monospace: "Pretendard", Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+$menufont: -apple-system, BlinkMacSystemFont, "Pretendard", "Montserrat",
+    "BioRhyme", sans-serif !default;
 
 /* serif typefaces */
 $georgia: Georgia, serif !default;
@@ -28,6 +30,9 @@ $times: Times, serif !default;
 $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
+$lobster: "Lobster", cursive !default;
+$biorhyme: "BioRhyme", serif !default;
+$creteround: "Crete Round", serif !default;
 
 $global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
@@ -45,15 +50,15 @@ $type-size-8: 0.625em !default; // ~10px
 
 /* headline scale */
 $h-size-1: 1.563em !default; // ~25.008px
-$h-size-2: 1.25em !default; // ~20px
-$h-size-3: 1.125em !default; // ~18px
-$h-size-4: 1.0625em !default; // ~17px
-$h-size-5: 1.03125em !default; // ~16.5px
-$h-size-6: 1em !default; // ~16px
+$h-size-2: 1.45em !default; // ~20px
+$h-size-3: 1.225em !default; // ~18px
+$h-size-4: 1.1125em !default; // ~17px
+$h-size-5: 1.05625em !default; // ~16.5px
+$h-size-6: 1.028125em !default; // ~16px
 
 /*
-      Colors
-      ========================================================================== */
+   Colors
+   ========================================================================== */
 
 $gray: #7a8288 !default;
 $dark-gray: mix(#000, $gray, 50%) !default;
@@ -74,9 +79,10 @@ $primary-color: #6f777d !default;
 $success-color: #3fa63f !default;
 $warning-color: #d67f05 !default;
 $danger-color: #ee5f5b !default;
-$info-color: #3b9cba !default;
+$info-color: #ba7f3b !default;
 $focus-color: $primary-color !default;
-$active-color: mix(#fff, $primary-color, 80%) !default;
+// navigation background color
+$active-color: mix($primary-color, $background-color, 5%) !default;
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
@@ -118,10 +124,6 @@ $masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 
-/* notices */
-$notice-background-mix: 80% !default;
-$code-notice-background-mix: 90% !default;
-
 /* syntax highlighting (base16) */
 $base00: #263238 !default;
 $base01: #2e3c43 !default;
@@ -141,8 +143,8 @@ $base0e: #c792ea !default;
 $base0f: #ff5370 !default;
 
 /*
-      Breakpoints
-      ========================================================================== */
+   Breakpoints
+   ========================================================================== */
 
 $small: 600px !default;
 $medium: 768px !default;
@@ -152,16 +154,21 @@ $x-large: 1280px !default;
 $max-width: $x-large !default;
 
 /*
-      Grid
-      ========================================================================== */
+   Grid
+   ========================================================================== */
 
-$right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
+$left-sidebar-width-narrow: 240px !default;
+$left-sidebar-width: 280px !default;
+$left-sidebar-width-wide: 400px !default;
+
+/* changed right sidebar width 200 -> 240, 250 -> 280 */
+$right-sidebar-width-narrow: 240px !default;
+$right-sidebar-width: 280px !default;
 $right-sidebar-width-wide: 400px !default;
 
 /*
-      Other
-      ========================================================================== */
+   Other
+   ========================================================================== */
 
 $border-radius: 4px !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;

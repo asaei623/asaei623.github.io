@@ -1,24 +1,23 @@
-# theme: "minimal-mistakes-jekyll"
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "plum" # "default" "air", "aqua"
 
 # Site Settings
-locale: "en-US"
-title: "YeongKyeong's devlog"
-title_separator: "-"
+locale: "ko-KR" #"en-US"
+title: "YeongKyeong's Devlog"
+title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
-name: "YeongKyeong Kwon"
-description: #"An amazing website."
+name: "YeongKyeong Kwon" # 블로그 닉네임 설정
+description: ":)"
 url: "https://asaei623.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+repository: "asaei623/asaei623.github.io"
+teaser: #
+
+# logo                     : # 블로그 이름 앞 로고 추가
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
-    provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+    provider: "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
     disqus:
         shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
     discourse:
@@ -29,15 +28,8 @@ comments:
         num_posts: # 5 (default)
         colorscheme: # "light" (default), "dark"
     utterances:
-        theme: # "github-light" (default), "github-dark"
-        issue_term: # "pathname" (default)
-    giscus:
-        repo_id: # Shown during giscus setup at https://giscus.app
-        category_name: # Full text name of the category
-        category_id: # Shown during giscus setup at https://giscus.app
-        discussion_term: # "pathname" (default), "url", "title", "og:title"
-        reactions_enabled: # '1' for enabled (default), '0' for disabled
-        theme: # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+        theme: "github-light" # "github-dark"
+        issue_term: "pathname"
     staticman:
         branch: # "master"
         endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
@@ -49,9 +41,7 @@ atom_feed:
     hide: # true, false (default)
 search: # true, false (default)
 search_full_content: # true, false (default)
-search_provider: # lunr (default), algolia, google
-lunr:
-    search_within_pages: # true, false (default)
+search_provider: # google
 algolia:
     application_id: # YOUR_APPLICATION_ID
     index_name: # YOUR_INDEX_NAME
@@ -63,17 +53,17 @@ google:
 # SEO Related
 google_site_verification:
 bing_site_verification:
-naver_site_verification:
 yandex_site_verification:
-baidu_site_verification:
+naver_site_verification:
 
 # Social Sharing
-twitter:
-    username:
-facebook:
-    username:
-    app_id:
-    publisher:
+# twitter:
+#   username:
+# facebook:
+#   username:
+#   app_id:
+#   publisher:
+
 og_image: # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -84,17 +74,17 @@ social:
 
 # Analytics
 analytics:
-    provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+    provider: "google-gtag"
+    # false (default), "google", "google-universal", "google-gtag", "custom"
     google:
-        tracking_id:
+        tracking_id: "your tracking id here"
         anonymize_ip: # true, false (default)
 
 # Site Author
 author:
-    name: "YeongKyeong Kwon"
-    avatar: "https://github.com/asaei623/test/assets/86418308/636c447b-0a1b-4c26-ba1c-d3a5906cbaf0"
-    bio: #"I am an **amazing** person."
-    location: "Seoul"
+    name: "YeongKyeong Kwon" # 블로그 닉네임
+    avatar: "/assets/images/avatar.jpg" # 블로그 프로필 사진
+
     links:
         - label: "Email"
           icon: "fas fa-fw fa-envelope-square"
@@ -181,7 +171,7 @@ plugins:
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-gist
-    - jekyll-feed
+    # - jekyll-feed
     - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
@@ -189,7 +179,7 @@ whitelist:
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-gist
-    - jekyll-feed
+    # - jekyll-feed
     - jekyll-include-cache
 
 # Archives
@@ -201,13 +191,16 @@ whitelist:
 #    expect broken links (especially with breadcrumbs enabled)
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
+#  - <base_path>/my-awesome-category/index.html ~> path: /\
+
+# category broken link : temporary commented out
 category_archive:
     type: liquid
     path: /categories/
-tag_archive:
-    type: liquid
-    path: /tags/
+# tag_archive:
+#   type: liquid
+#   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -236,7 +229,10 @@ defaults:
       values:
           layout: single
           author_profile: true
-          read_time: true
-          comments: # true
-          share: true
+          read_time: #true
+          show_date: true
+          comments: true
+          # share: true
           related: true
+          sidebar:
+              nav: "categories"

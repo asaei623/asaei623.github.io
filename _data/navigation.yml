@@ -1,0 +1,27 @@
+# main links
+main:
+    - title: "Home"
+      url: https://asaei623.github.io
+
+    - title: "About"
+      url: /about/
+
+    - title: "GitHub"
+      url: https://github.com/asaei623
+
+    # - title: "Projects"
+    #   url: /projects/
+
+    #= - title: "Categories"
+    #   url: /categories/
+
+# sidebar navigation (categories)
+categories:
+    - title: "Algorithm"
+      url: /categories/algorithm/
+    # - title: "title2"
+    #   children:
+    #       - title: "title3"
+    #         url: /categories/title3/
+    #       - title: "title3"
+    #         url: /categories/title3/
