@@ -12,7 +12,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 repository: "asaei623/asaei623.github.io"
 teaser: #
 
-logo: 🍊 # 블로그 이름 앞 로고 추가
+# logo                     : # 블로그 이름 앞 로고 추가
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
