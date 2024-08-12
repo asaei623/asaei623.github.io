@@ -40,6 +40,8 @@ BFS는 정석적인 코드가 있기 때문에 그 틀을 외워두는 것이 �
 1. 시작점에 `방문 표시`를 남기지 않는다.
 2. `큐`에 **넣을 때**가 아닌 빼낼 때 `방문 표시`를 남겨서 시간 초과 혹은 메모리 초과가 발생한다.
 
+<br>
+
 ## 🍊 예시
 
 📝 **문제** [BOJ 1926 그림](https://www.acmicpc.net/problem/1926)
@@ -57,11 +59,30 @@ Flood Fill을 수행하는 문제다.
 
 칸이 큐에 한 번씩만 들어가기 때문에 칸의 개수를 NM이라 할 때 시간 복잡도는 O(NM)이다.
 
+<br>
+
 ## 🍊 응용 1 - 거리 측정
 
-📝 **문제** [BOJ 2178 미로탐색](https://www.acmicpc.net/problem/2178)
+📝 **문제** [BOJ 2178 미로탐색](https://www.acmicpc.net/problem/2178) 📝 **[내 풀이](https://github.com/asaei623/Algorithm-Study-Python/blob/main/BFS/%EB%AF%B8%EB%A1%9C_%ED%83%90%EC%83%89.py)**
 
 ### 풀이 방법
 
 -   하위 level 노드로 이동할 때 **거리가 1 증가**하는 것과 같다.
 -   BFS를 동일하게 수행하면서 거리를 저장하면 된다.
+
+<br>
+
+## 🍊 응용 2 - 시작점이 여러 개일 때
+
+📝 **문제** [BOJ 7576 토마토](https://www.acmicpc.net/problem/7576) 📝 **[내 풀이](https://github.com/asaei623/Algorithm-Study-Python/blob/main/BFS/%ED%86%A0%EB%A7%88%ED%86%A0.py)**
+
+### 풀이 방법
+
+-   **모든 시작점**을 **큐**에 넣고 BFS를 시작하면 자연스럽게 여러 시작점에 대해 동시에 BFS가 돌아가는 것과 같이 된다.
+
+<br>
+
+---
+
+<span style="color:#888888">출처</span>
+https://blog.encrypted.gg/941
