@@ -1,6 +1,6 @@
 ---
 title: "BFS 개념 정리"
-excerpt: ""
+excerpt: "BFS 기본 풀이 방법과 4가지 응용 유형"
 
 categories:
     - Algorithm
@@ -82,7 +82,30 @@ Flood Fill을 수행하는 문제다.
 
 <br>
 
+## 🍊 응용 3 - 시작점이 두 종류일 때
+
+📝 **문제** [BOJ 4179 불!](https://www.acmicpc.net/problem/4179) 📝 **[내 풀이](https://github.com/asaei623/Algorithm-Study-Python/blob/main/BFS/%EB%B6%88!.py)**
+
+### 풀이 방법
+
+-   종류가 다른 시작점들에 대해서 **각각 BFS를 실행**한다. 이 문제는 불의 전파만 지훈이에게 영향을 주고 불의 전파는 지훈이에게 영향을 받지 않는다. 따라서 불의 전파를 끝낸 다음, 지훈의 BFS를 실행하는 것으로 문제를 해결할 수 있었다.
+
+-   만약 A, B의 전파가 서로에게 영향을 준다면, 두 BFS를 동시에 진행시켜야 하기 때문에 지금의 방법으로는 해결할 수 없다.
+
+<br>
+
+## 🍊 응용 4 - 1차원에서의 BFS
+
+📝 **문제** [BOJ 1697 숨바꼭질](https://www.acmicpc.net/problem/1697) 📝 **[내 풀이](https://github.com/asaei623/Algorithm-Study-Python/blob/main/BFS/%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88.py)**
+
+### 풀이 방법
+
+-   2차원에서 상하좌우 이동 시 거리를 +1 했던 것처럼, 수빈이가 수직선에서 **-1, +1, \*2로 이동 시 거리를 +1 하는 것**으로 생각한다.
+-   주의 할 것은, 문제에서 수빈이의 **이동 범위가 제한되어 있지 않다**는 것이다. 이 문제에서는 수빈이가 `0 <= N <= 100,000`을 벗어나는 것이 비효율적이기 때문에(갈 이유가 없기 때문에) 이대로 이동 범위를 제한해도 문제가 없지만, _다른 문제에서는 그렇지 않을 수도 있기_ 때문에 주의해서 살펴야 한다.
+
+<br>
+
 ---
 
 <span style="color:#888888">출처</span>
-https://blog.encrypted.gg/941
+[https://blog.encrypted.gg/941](https://blog.encrypted.gg/941)
