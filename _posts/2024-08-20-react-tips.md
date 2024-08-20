@@ -3,7 +3,7 @@ title: "알아두면 유용한 '리액트' 개념과 성능 최적화 팁"
 excerpt: "리액트 개념, 리액트 훅, 데이터 전달 방법"
 
 categories:
-    - 아티클 정리
+    - "아티클 정리"
 tags: # 포스트 태그
     - [react, react hook]
 
