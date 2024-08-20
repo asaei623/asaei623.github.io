@@ -5,7 +5,7 @@ excerpt: "리액트 개념, 리액트 훅, 데이터 전달 방법"
 categories:
     - 아티클 정리
 tags: # 포스트 태그
-    - [algorithm, python, BFS]
+    - [react, react hook]
 
 permalink: /categories/article/2024-08-20-react-tips/
 
