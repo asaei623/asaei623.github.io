@@ -7,7 +7,7 @@ categories:
 tags: # 포스트 태그
     - [algorithm, python, BFS]
 
-permalink: /categories1/BFS-concepts/
+permalink: /categories/algorithm/2023-10-07-BFS-concepts/
 
 toc: true
 toc_sticky: true

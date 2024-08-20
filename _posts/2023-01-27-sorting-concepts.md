@@ -7,7 +7,7 @@ categories:
 tags: # 포스트 태그
     - [algorithm, python, sorting]
 
-permalink: /categories1/sorting-concepts/
+permalink: /categories/algorithm/2023-01-27-sorting-concepts/
 
 toc: true
 toc_sticky: true
