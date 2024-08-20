@@ -19,6 +19,8 @@ main:
 categories:
     - title: "Algorithm"
       url: /categories/algorithm/
+    - title: "아티클 정리"
+      url: /categories/article/
     # - title: "title2"
     #   children:
     #       - title: "title3"
